@@ -1,0 +1,19 @@
+{
+  "name": "lobox-mf-app-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sourav Kumar Nanda",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "wsrun": "^5.2.1"
+  }
+}
